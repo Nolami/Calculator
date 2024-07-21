@@ -5,7 +5,7 @@ function ad() {
 
     const result = num1 + num2
 
-    document.getElementById('resadd').innerText = `${result}`
+    document.getElementById('resadd').innerText = `Answer: ${result}`
 }
 function sub() {
 
@@ -14,13 +14,13 @@ function sub() {
 
     const result = num1 - num2
 
-    document.getElementById('ressub').innerText = `${result}`
+    document.getElementById('ressub').innerText = `Answer: ${result}`
 }
 function mult() {
 
-    const num1 = parseFloat(document.getElementById('nummult1').value)
-    const num2 = parseFloat(document.getElementById('nummult2').value)
-    const times = parseInt(document.getElementById('multtimes').times)
+    const num1 = parseFloat(document.getElementById('numult1').value)
+    const num2 = parseFloat(document.getElementById('numult2').value)
+    const times = parseInt(document.getElementById('multtimes').value)
 
     let result = num1
 
@@ -28,14 +28,14 @@ function mult() {
         result *= num2
     }
 
-    document.getElementById('resmult').innerText = `${result}`
+    document.getElementById('resmult').innerText = `Answer: ${result}`
 }
 
-function ad() {
+function div() {
 
     const num1 = parseFloat(document.getElementById('numdiv1').value)
     const num2 = parseFloat(document.getElementById('numdiv2').value)
-    const times = parseInt(document.getElementById('divtimes').times)
+    const times = parseInt(document.getElementById('divtimes').value)
 
     let result = num1
 
@@ -43,5 +43,5 @@ function ad() {
         result /= num2
     }
 
-    document.getElementById('resdiv').innerText = `${result}`
+    document.getElementById('resdiv').innerText = `Answer: ${result}`
 }
