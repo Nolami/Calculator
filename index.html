@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <title>What the fuck</title>
 
+    <style>
+        .addition {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .subtraction {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .multiplication {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .division {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+
 </head>
 <body>
     <addition>
@@ -15,40 +46,46 @@
         <input type="number" id="numad2">
         <br><br>
         <button onclick="ad()">Add together</button>
-        <p id="res"></p>
+        <p id="resadd"></p>
     </addition>
     <subtraction>
         <h1>Subtraction</h1>
         <label for="numsub1">Number 1: </label>
         <input type="number" id="numsub1">
         <br><br>
-        <label for="numad2">Number 2: </label>
-        <input type="number" id="numad2">
+        <label for="numsub2">Number 2: </label>
+        <input type="number" id="numsub2">
         <br><br>
-        <button onclick="ad()">Add together</button>
-        <p id="res"></p>
+        <button onclick="sub()">Subtract</button>
+        <p id="ressub"></p>
     </subtraction>
     <multiplication>
         <h1>Multiplication</h1>
-        <label for="numad1">Number 1: </label>
-        <input type="number" id="numad1">
+        <label for="numul1">Number 1: </label>
+        <input type="number" id="numult1">
         <br><br>
-        <label for="numad2">Number 2: </label>
-        <input type="number" id="numad2">
+        <label for="numul2">Number 2: </label>
+        <input type="number" id="numult2">
         <br><br>
-        <button onclick="ad()">Add together</button>
-        <p id="res"></p>
+        <label for="amountmul">How many times to multiply: </label>
+        <input type="number" id="multtimes" value="1">
+        <br><br>
+        <button onclick="mult()">Multiply</button>
+        <p id="resmult"></p>
     </multiplication>
     <division>
         <h1>Division</h1>
-        <label for="numad1">Number 1: </label>
-        <input type="number" id="numad1">
+        <label for="numdiv1">Number 1: </label>
+        <input type="number" id="numdiv1">
         <br><br>
-        <label for="numad2">Number 2: </label>
-        <input type="number" id="numad2">
+        <label for="numdiv2">Number 2: </label>
+        <input type="number" id="numdiv2">
         <br><br>
-        <button onclick="ad()">Add together</button>
-        <p id="res"></p>
+        <label for="amountdiv">How many times to divide: </label>
+        <input type="number" id="divtimes" value="1">
+        <br><br>
+        <button onclick="div()">Divide</button>
+        <p id="resdiv"></p>
     </division>
 </body>
 </html>
