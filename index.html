@@ -33,6 +33,20 @@
             align-items: center;
             text-align: center;
         }
+        exponent {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        root {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     </style>
     <script src="actual.js"></script>
 
@@ -88,5 +102,27 @@
         <button onclick="div()">Divide</button> <!-- huh? -->
         <p id="resdiv"></p>
     </division>
+    <exponent>
+        <h1>Exponentation</h1>
+        <label for="numex">Number 1: </label>
+        <input type="number" id="numex">
+        <br><br>
+        <label for="amountex">What exponent? </label> <!-- Retarded ass-->
+        <input type="number" id="exp" value="1">
+        <br><br>
+        <button onclick="exp()">Multiply</button>
+        <p id="resexp"></p>
+    </exponent>
+    <root>
+        <h1>Root</h1>
+        <label for="numrt">Number 1: </label>
+        <input type="number" id="numrt">
+        <br><br>
+        <label for="amountrt">What root? </label> <!-- Retarded ass-->
+        <input type="number" id="rt" value="1">
+        <br><br>
+        <button onclick="root()">Root</button>
+        <p id="resrt"></p>
+    </root>
 </body>
 </html>
