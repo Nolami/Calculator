@@ -47,6 +47,27 @@
             align-items: center;
             text-align: center;
         }
+        pythagorean {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        percentage1 {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        percentage2 {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
     </style>
     <script src="actual.js"></script>
 
@@ -124,5 +145,38 @@
         <button onclick="root()">Root</button>
         <p id="resrt"></p>
     </root>
+    <pythagorean>
+        <h1>Pythagorean</h1>
+        <label for="numpy">Side A</label>
+        <input type="number" id="sidepy">
+        <br><br>
+        <label for="numpy2">Side B</label>
+        <input type="number" id="sidepy2">
+        <br><br>
+        <button onclick="pyth()">Calculate</button>
+        <p id="respy"></p>
+    </pythagorean>
+    <percentage1>
+        <h1>Percentage calculator</h1>
+        <label for="numper">Base:</label>
+        <input type="number" id="per">
+        <br><br>
+        <label for="numper2">Percentage(%):</label>
+        <input type="number" id="per2">
+        <br><br>
+        <button onclick="perc()">Calculate</button>
+        <p id="resper"></p>
+    </percentage1>
+    <percentage2>
+        <h1>Percentage finder</h1>
+        <label for="numperc">Total:</label>
+        <input type="number" id="perc">
+        <br><br>
+        <label for="numperc">Part:</label>
+        <input type="number" id="perc2">
+        <br><br>
+        <button onclick="percfind()">Calculate</button>
+        <p id="resperc"></p>
+    </percentage2>
 </body>
 </html>
