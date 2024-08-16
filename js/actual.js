@@ -120,3 +120,45 @@ function percfind() {
 
     document.getElementById("resperc").innerText = `${res}%`
 }
+function fracAdd() {
+    const num1 = parseFloat(document.getElementById("fracnum1").value)
+    const den1 = parseFloat(document.getElementById("fracden1").value)
+    const num2 = parseFloat(document.getElementById("fracnum2").value)
+    const den2 = parseFloat(document.getElementById("fracden2").value)
+
+    const comden = den1 * den2
+
+    const adj = num1 * den2
+    const adj2 = num2 * den1
+
+    const res = adj + adj2
+
+    const gcd = greatestCommonDivisor(res, comden)
+    const finnum = res / gcd
+    const finden = comden / gcd
+
+    document.getElementById("fracaddres").innerText = `${finnum}/${finden}`
+}
+function greatestCommonDivisor(a, b) {
+    if (b === 0) return a;
+    return greatestCommonDivisor(b, a % b)
+}
+function fracSub() {
+    const num1 = parseFloat(document.getElementById("fracsnum1").value)
+    const den1 = parseFloat(document.getElementById("fracsden1").value)
+    const num2 = parseFloat(document.getElementById("fracsnum2").value)
+    const den2 = parseFloat(document.getElementById("fracsden2").value)
+
+    const comden = den1 * den2
+
+    const adj = num1 * den2
+    const adj2 = num2 * den1
+
+    const res = adj - adj2
+
+    const gcd = greatestCommonDivisor(res, comden)
+    const finnum = res / gcd
+    const finden = comden / gcd
+
+    document.getElementById("fracsubres").innerText = `${finnum}/${finden}`
+}

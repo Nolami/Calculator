@@ -68,6 +68,20 @@
             align-items:center;
             text-align:center;
         }
+        fracadd {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        fracsub {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
     </style>
     <script src="actual.js"></script>
 
@@ -178,6 +192,36 @@
         <button onclick="percfind()">Calculate</button>
         <p id="resperc"></p>
     </percentage2>
+    <fracadd>
+        <h1>Adding Fractions Together</h1>
+        <label for="fracnum1">Numerator 1:</label>
+        <input type="number" id="fracnum1">
+        <label for="fracden1">Denominator 1:</label>
+        <input type="number" id="fracden1">
+        <br><br>
+        <label for="fracnum2">Numerator 2:</label>
+        <input type="number" id="fracnum2">
+        <label for="fracden2">Denominator 2:</label>
+        <input type="number" id="fracden2">
+        <br><br>
+        <button onclick="fracAdd()">Add together</button>
+        <p id="fracaddres"></p>
+    </fracadd>
+    <fracsub>
+        <h1>Subtract fractions</h1>
+        <label for="fracsnum1">Numerator 1:</label>
+        <input type="number" id="fracsnum1">
+        <label for="fracsden1">Denominator 1:</label>
+        <input type="number" id="fracsden1">
+        <br><br>
+        <label for="fracsnum2">Numerator 2:</label>
+        <input type="numsber" id="fracsnum2">
+        <label for="fracsden2">Denominator 2:</label>
+        <input type="number" id="fracsden2">
+        <br><br>
+        <button onclick="fracSub()">Subtract</button>
+        <p id="fracsubres"></p>
+    </fracsub>
 
     <br><br>
     <a href="changelog.html" target="_blank">View Changelog</a>
