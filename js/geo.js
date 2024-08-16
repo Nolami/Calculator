@@ -1,4 +1,4 @@
-function circSqr() {
+function perSqr() {
     const a = parseFloat(document.getElementById("side").value)
 
     const res = a*4
@@ -26,4 +26,22 @@ function sqrArea() {
     const res = a*a
     
     document.getElementById('sqrAreaRes').innerText = `${res}`
+}
+function sqrCube() {
+    const a = parseFloat(document.getElementById('sider').value)
+
+    const res = a*a*a
+
+    document.getElementById('sqrCubeRes').innerText = `${res}`
+}
+function sqrDigLength() {
+    const a = parseFloat(document.getElementById('a').value)
+
+    if (isNaN(a) || a <= 0) {
+        document.getElementById('sqrDigLengthRes').innerText = `Enter a valid number`
+    }
+
+    const res = a * Math.sqrt(2)
+
+    document.getElementById('sqrDigLengthRes').innerText = `${res}`
 }
