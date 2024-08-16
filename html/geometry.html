@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geometry</title>
+    <script src="../js/geo.js"></script>
+</head>
+<body>
+    <square>
+        <circ>
+            <h1>Circumference of a square</h1>
+            <label for="side">Side length:</label>
+            <input type="number" id="side">
+            <br><br>
+            <button onclick="circSqr()">Calculate</button>
+            <p id="circsqrres"></p>
+        </circ>
+        <area>
+            <h1>Area of a square</h1>
+            <label for="sideA">Side length:</label>
+            <input type="numer" id="sideA">
+            <br><br>
+            <button onclick="sqrArea()">Calculate</button>
+            <p id="sqrAreaRes"></p>
+        </area>
+    </square>
+
+    <pythagorean>
+        <h1>Pythagorean</h1>
+        <label for="numpy">Side A</label>
+        <input type="number" id="sidepy">
+        <br><br>
+        <label for="numpy2">Side B</label>
+        <input type="number" id="sidepy2">
+        <br><br>
+        <button onclick="pyth()">Calculate</button>
+        <p id="respy"></p>
+    </pythagorean>
+</body>
