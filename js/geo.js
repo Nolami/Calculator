@@ -20,17 +20,20 @@ function hypo(a, b) {
     const hypo = Math.sqrt(sum)
     return hypo;
 }
+function pow(a, b) {
+    return Math.pow(a,b)
+}
 function sqrArea() {
     const a = parseFloat(document.getElementById("sideA").value)
 
-    const res = a*a
+    const res = sqr(a, 2)
     
     document.getElementById('sqrAreaRes').innerText = `${res}`
 }
 function sqrCube() {
     const a = parseFloat(document.getElementById('sider').value)
 
-    const res = a*a*a
+    const res = pow(a, 3)
 
     document.getElementById('sqrCubeRes').innerText = `${res}`
 }
@@ -44,4 +47,40 @@ function sqrDigLength() {
     const res = a * Math.sqrt(2)
 
     document.getElementById('sqrDigLengthRes').innerText = `${res}`
+}
+function DigAr() {
+    const diagonal = parseFloat(document.getElementById('digar').value)
+
+    if (isNaN(diagonal) || diagonal <= 0) {
+        document.getElementById('sqrDigAreaRes').innerText = 'Please input a valid number'
+        return;
+    }
+
+    const area = pow(diagonal, 2) / 2;
+
+    document.getElementById('sqrDigAreaRes').innerText = `${area}`
+}
+function circum() {
+    const a = parseFloat(getElementById('sqrcircum').value)
+
+    if(isNaN(a) || a <= 0) {
+        document.getElementById('sqrCircumRes').innerText = `input a valid number`
+        return;
+    }
+
+    const res = a / 2;
+
+    document.getElementById('sqrCircumRes').innerText = `${res}`
+}
+function inc() {
+    const a = parseFloat(getElementById('sqrincircle').value)
+
+    if(isNaN(a) || a <= 0) {
+        document.getElementById('sqrincleRes').innerText = `input a valid number`
+        return;
+    }
+
+    const res = a / 2;
+
+    document.getElementById('sqrincRes').innerText = `${res}`
 }
